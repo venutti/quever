@@ -4,7 +4,7 @@ import MovieModal from "./MovieModal";
 
 const getMovie = async (genreId: string) => {
   const response = await fetch(
-    `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.NEXT_PUBLIC_MOVIEDB_API_KEY}&with_genres=${genreId}&language=es-AR`
+    `https://api.themoviedb.org/3/discover/movie?api_key=69fc259515129760c85662f08c141b6f&with_genres=${genreId}&language=es-AR`
   );
   if (!response.ok) throw new Error("Error fetching movie");
   const data = await response.json();
