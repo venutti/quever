@@ -1,27 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lobster&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.select_input {
+  @apply w-full py-2 px-3 rounded-md cursor-pointer bg-emerald-900;
+}
+.select_dropdown {
+  @apply absolute z-10 mt-1 py-1 w-full bg-emerald-50 text-emerald-950 rounded-md shadow-sm max-h-[300px] overflow-auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.select_option {
+  @apply py-2 px-4 cursor-pointer hover:bg-emerald-100;
 }
